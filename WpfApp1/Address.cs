@@ -17,5 +17,19 @@ namespace WpfApp1
         public string City { get; set; }
 
         public int ZipCode { get; set; }
+
+
+        public Address()
+        {
+            StreetNumber = 0;
+            StreetName = "";
+            State = "";
+            City = "";
+            ZipCode = 0;
+        }
+
+        public Address(int streetNumber, string streetName, string state, string city, int zipCode);
+        
+
     }
 }
